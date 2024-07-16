@@ -1,0 +1,249 @@
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+   
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        justify-content: center;
+        align-items: center;
+    
+    }
+
+    .slider{
+       width: 800px;
+       height: 500px;
+       border-radius: 10px;
+       overflow: hidden;
+    }
+    .slides{
+        width: 500%;
+        height: 500px;
+        display: flex;
+    }
+    .slides input{
+        display: none;
+    }
+    .slide{
+        width: 20%;
+        transition: 2s;
+    }
+    .slide img{
+        height: 100vh;
+    }
+   .navigation-manual{
+position: relative
+;
+width: 800px;
+margin-top: -40px;
+display: flex;
+justify-content: center;
+   }
+
+   .manual-btn{
+    border:2px solid blue ;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+   }
+   .manual-btn:not(:last-child)
+{
+    margin-right: 40px;
+
+}
+.manual-btn:hover{
+    background: blue;
+}
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+#radio2:checked ~ .first{
+    margin-left: -20%;
+}
+#radio3:checked ~ .first{
+    margin-left: -40%;
+}
+#radio4:checked ~ .first{
+    margin-left: -60%;
+}
+#radio5:checked ~ .first{
+    margin-left: -80%;
+}
+
+.navigation-auto{
+    position: absolute;
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    margin-top: 460px;
+}
+.navigation-auto div{
+    border: 2px solid blue;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background: blue;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background: blue;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background: blue;
+}
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background: blue;
+}
+#radio5:checked ~ .navigation-auto .auto-btn5{
+    background: blue;
+}
+.box{
+    position: relative;
+    left: 10%;
+}
+  .navigation-manual{
+    display: none;
+  }
+  
+  .navigation-auto{
+    display: none;
+  }
+.text{
+    margin-right: 170px;
+}
+.scroll{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+.mainscrolldiv{
+    width: 90%;
+    height:100%;
+    align-items: center;
+    justify-content: space-between;
+border: 2px solid red;
+display: flex;
+}
+.cover{
+    position: relative
+    ;
+    width: 90%;
+    height: 50%;
+}
+.scrollimages{
+    position: absolute;
+    height: auto;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    overflow: auto;
+    position: relative
+    ;
+    scroll-behavior: smooth;
+    gap: 10px;
+}
+.cover::before{
+    position: absolute
+    ;
+   left: 0;
+   top: 0;
+   z-index: 99;
+   height: 100%;
+   width: 150px;
+   background-image: linear-gradient(90deg,black,transparent);
+    
+}
+.icon:hover{
+    color: yellow;
+
+}
+.icon{
+    color: rgb(67, 247, 76);
+    background-color: transparent;
+    font-size: 50px;
+    outline: none;
+    border: none;
+    padding: 0px 20px;
+    cursor: pointer;
+}
+.scrollimages::-webkit-scrollbar{
+    -webkit-appearance: none;
+}
+.cover::after{
+    position: absolute
+    ;
+   right: 0;
+   top: 0;
+   z-index: 99;
+   height: 100%;
+   width: 150px;
+   background-image: linear-gradient(90deg,black,transparent);
+    
+}
+.child{
+    min-width:600px ;
+    height: 450px;
+    margin: 1px 10px;
+    cursor: pointer;
+    border: 1px solid white;
+    overflow: hidden;
+}
+.child-img{
+    width: auto;
+    height: 100%;
+
+}
+@media screen and (max-width:425px) {
+    .text{
+        position: absolute;
+        left: 110px;
+        display: none;
+    }
+   .body{
+    font-size: 16px;
+   }
+   .scrollimages{
+    height: auto;
+    width: auto;
+   }
+div{
+    size: 50px;
+}
+.mainscrolldiv{
+    border: none;
+}
+.mobi img{
+height: 40px;
+width: 40px;
+}
+.k{
+    margin
+}
+.para2{
+   display: none;
+}
+.class{
+    display: block;
+}
+.mobiles p{
+    display: none;
+}
+.mobiles{
+   box-shadow: none;
+}
+.laptops{
+    display: none;
+}
+
+
+}
