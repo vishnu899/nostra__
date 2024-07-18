@@ -119,6 +119,18 @@ justify-content: center;
 .text{
     margin-right: 170px;
 }
+.first{
+    height: 600px;
+}
+.f{
+    width: 40%;
+    margin-left: 30%;
+}
+.second{
+    width: 350px;
+    position: relative;
+    right: 320px;
+}
 .scroll{
     display: flex;
     align-items: center;
@@ -127,12 +139,43 @@ justify-content: center;
     width: 100%;
 }
 .mainscrolldiv{
-    width: 90%;
+    width: 80%;
     height:100%;
     align-items: center;
     justify-content: space-between;
-border: 2px solid red;
+
 display: flex;
+}
+.recommended{
+    padding: 10px;
+}
+.recommended__container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 10px;
+    
+}
+.header{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    
+}
+.navbar{
+    gap: 5px;
+}
+.course-card{
+    width: 250px;
+}
+.course-card img{
+    width: 100%;
+    height: 50%;
+}
+.course-card{
+    flex-grow: 1;
+    flex-basis: 20%;
+    margin: 5px;
 }
 .cover{
     position: relative
@@ -151,6 +194,7 @@ display: flex;
     ;
     scroll-behavior: smooth;
     gap: 10px;
+   
 }
 .cover::before{
     position: absolute
@@ -190,6 +234,24 @@ display: flex;
    background-image: linear-gradient(90deg,black,transparent);
     
 }
+.topics{
+    padding: 10px;
+}
+.topics__container{
+    display:flex;
+    gap: 10px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+.topics__container p:hover{
+background-color: #A435F0;
+}
+.topics__container p{
+    border: solid gray 2px;
+    padding: 10px;
+    flex-grow: 1;
+    flex-basis: 25%;
+}
 .child{
     min-width:600px ;
     height: 450px;
@@ -210,7 +272,7 @@ display: flex;
         display: none;
     }
    .body{
-    font-size: 16px;
+    font-size: 12px;
    }
    .scrollimages{
     height: auto;
@@ -222,12 +284,36 @@ div{
 .mainscrolldiv{
     border: none;
 }
+.course-card{
+    flex-basis: 40%;
+}
+.class{
+    margin-left: 20px;
+}
+.mobiles{
+    display: none;
+}
+.i{
+    display: none;
+}
+.news{
+    margin-left: 5px;
+    margin-right: 5px;
+    display: none;
+}
 .mobi img{
 height: 40px;
 width: 40px;
 }
-.k{
-    margin
+.scrollimages img{
+    width: 300px;
+    height: 400px;
+}
+.child{
+    position: relative;
+}
+.icon{
+    display:none ;
 }
 .para2{
    display: none;
@@ -244,6 +330,5 @@ width: 40px;
 .laptops{
     display: none;
 }
-
 
 }

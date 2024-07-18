@@ -1,297 +1,446 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              clifford: '#da373d',
-            }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
           }
         }
       }
-    </script>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    }
+  </script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body class="body">
-<section class="vishnu" >
+  <section class="vishnu">
     <div class="flex justify-center items-center gap-10 mt- bg-slate-900 text-white p-5 shadow-xl">
-       
-        <h1 class="text-center  sm:block text-sm">Sign Up and <b>
-            <u>GET 20% 0FF</u></b> for your first Order</h1>
-   
-   
-    </div>
-</section> 
 
-<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8 relative left-1/2 mt-3 hover:translate-y-1" id="close">
-    <path stroke-linecap="round"  stroke-linejoin="round" d="m9.75 9.75 4.5 4.5m0-4.5-4.5 4.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+      <h1 class="text-center  sm:block text-sm">Sign Up and <b>
+          <u>GET 20% 0FF</u></b> for your first Order</h1>
+
+
+    </div>
+  </section>
+
+  <div class="fixed text-center justify-center w-full  items-center bg-yellow-300 p-5 z-20" style="top: 632px;">Sale offer ends: 12h | 19m | 20s</div>
+
+
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+    class="size-8 relative left-1/2 mt-3 hover:translate-y-1" id="close">
+    <path stroke-linecap="round" stroke-linejoin="round"
+      d="m9.75 9.75 4.5 4.5m0-4.5-4.5 4.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
   </svg>
-  
 
-<section class="flex justify-between mx-5">
-    <h1 class="font-bold text-2xl">Nostra</h1>
-    <div class="flex justify-center items-center gap-6 cursor-pointer hidden sm:flex">
-        <p class="hover:underline">Home</p>
-        <p class="hover:underline">New Arrival</p>
-        <p class="hover:underline">Most Wanted</p>
-        <p class="hover:underline">Collections</p>
-        <p class="hover:underline">Contact Us</p>
-        <p class="hover:underline" id="signin">
-            <a href="signup.html">Sign Up</a></p>
-    </div>
-    <svg xmlns="http://www.w3.org/2000/svg" id="menuicon" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 sm:hidden mt-2">
+  <header class="header mx-5 gap-3 flex justify-between">
+    <a href="#" class="logo font-bold tetx-6xl">Nostra</a>
+    <nav class="navbar hidden sm:flex gap-3" style="margin-left: 700px;">
+      <a href="index.html">Home</a>
+      <a href="#most" class="active">New Arrivals</a>
+      <a href="#new" class="active">Most Wanted</a>
+      <a href="collections.html">Collections</a>
+      <a href="signup.html">Signup</a>
+    </nav>
+    <div>
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 sm:hidden" id="menuicon">
         <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
       </svg>
-      
-</section>
+    </div>
+  </header>
 
-<section id="sidenav" class="bg-slate-900 fixed z-20 top-0 text-white transition-all duration-1000"  style="width: 50%;height: 100vh; right:-50%;">
+  
+
+  <section id="sidenav" class="bg-slate-900 fixed z-20 top-0 text-white transition-all duration-1000"
+    style="width: 50%;height: 100vh; right:-50%;">
+
+   
+    
     <div class="text-right p-5">
-        <p class="inline cursor-pointer" id="closenav">X</p>
+      <p class="inline cursor-pointer" id="closenav">X</p>
     </div>
     <div class="flex flex-col gap-10 cursor-pointer items-center  sm:flex">
-        <p class="hover:underline">Home</p>
-        <p class="hover:underline">New Arrival</p>
-        <p class="hover:underline">Most Wanted</p>
-        <p class="hover:underline">Collections</p>
-        <p class="hover:underline">Contact Us</p>
+      <p class="hover:underline">Home</p>
+      <p class="hover:underline">New Arrival</p>
+      <p class="hover:underline">Most Wanted</p>
+      <p class="hover:underline">Collections</p>
+      <p class="hover:underline">Contact Us</p>
     </div>
-</section>
+  </section>
 
 
   <div class="box flex justify-between">
     <div>
-    <section class="slider  sm:block mt-10">
-       <div class="slides">
-        
-        <input type="radio" name="radio-btn" id="radio1">
-        <input type="radio" name="radio-btn" id="radio2">
-        <input type="radio" name="radio-btn" id="radio3">
-        <input type="radio" name="radio-btn" id="radio4">
-        <input type="radio" name="radio-btn" id="radio5">
-        
-        <div class="slide first">
-            <img src="images/p1.jpg" alt=""></div>
-        
-<div class="slide">
-    <img src="images/p2.jpg" alt=""></div>
+      <section class="slider  sm:block mt-10">
+        <div class="slides">
 
-    <div class="slide">
-        <img src="images/p3.jpg" alt=""></div>
+          <input type="radio" name="radio-btn" id="radio1">
+          <input type="radio" name="radio-btn" id="radio2">
+          <input type="radio" name="radio-btn" id="radio3">
+          <input type="radio" name="radio-btn" id="radio4">
+          <input type="radio" name="radio-btn" id="radio5">
 
-        <div class="slide">
-            <img src="images/p4.jpg" alt=""></div>
+          <div class="slide first">
+            <img src="images/p1.jpg" alt="">
+          </div>
 
-            <div class="slide">
-                <img src="images/p5.jpg" alt=""></div>
+          <div class="slide">
+            <img src="images/p2.jpg" alt="">
+          </div>
 
-                <!--automatic-->
-<div class="navigation-auto">
-    <div class="auto-btn1"></div>
-    <div class="auto-btn2"></div>
-    <div class="auto-btn3"></div>
-    <div class="auto-btn4"></div>
-    <div class="auto-btn5"></div>
-    </div>
+          <div class="slide">
+            <img src="images/p3.jpg" alt="">
+          </div>
 
-                <!--automatic ends-->
+          <div class="slide">
+            <img src="images/p4.jpg" alt="">
+          </div>
+
+          <div class="slide">
+            <img src="images/p5.jpg" alt="">
+          </div>
+
+          <!--automatic-->
+          <div class="navigation-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+            <div class="auto-btn4"></div>
+            <div class="auto-btn5"></div>
+          </div>
+
+          <!--automatic ends-->
         </div>
         <!--manual starts-->
-<div class="navigation-manual">
-    <label for="radio1" class="manual-btn"></label>
-    <label for="radio2" class="manual-btn"></label>
-    <label for="radio3" class="manual-btn"></label>
-    <label for="radio4" class="manual-btn"></label>
-    <label for="radio5" class="manual-btn"></label>
-    
-    </div>
+        <div class="navigation-manual">
+          <label for="radio1" class="manual-btn"></label>
+          <label for="radio2" class="manual-btn"></label>
+          <label for="radio3" class="manual-btn"></label>
+          <label for="radio4" class="manual-btn"></label>
+          <label for="radio5" class="manual-btn"></label>
+
+        </div>
         <!--manual ends-->
-        </section>
+      </section>
+    </div>
+    <div class="text">
+      <h1 class="text-3xl hidden mt-20 relative right-20 w-96">
+        Shop a variety of <b>Mobiles & Laptops</b> in our Website
+      </h1><br>
+    </div>
+  </div>
+
+
+  <!-- signin -->
+
+
+
+  <section class="k mt-20">
+    <h1 id="tecl" class="mx-6 font-bold tetx-4xl">Brands</h1>
+
+    <!-- images starts -->
+    <div class="mobi">
+      <div class="flex justify-between mx-5 mt-5">
+        <img src="images/apple-logo.png" alt="apple" class="size-16">
+        <img src="images/xiaomi.png" alt="redmi" class="size-16">
+        <img src="images/one-plus.png" alt="one-plus" class="size-16">
+        <img src="images/hp.png" alt="hp" class="size-16">
+        <img src="images/asus.png" alt="asus" class="size-16">
+        <img src="images/acer.png" alt="acer" class="size-16">
       </div>
-<div class="text">
-        <h1 class="text-3xl hidden mt-20 relative right-20 w-96">
-            Shop a variety of <b>Mobiles & Laptops</b> in our Website
-        </h1><br>
     </div>
+  </section>
+
+
+  <section class="flex justify-between mx-5 mt-20">
+    <div class="para1">
+      <p class="font-bold text-3xl">We Provide Best</p>
+      <p class="font-bold text-3xl">Customer Experiences</p>
     </div>
- 
 
-<!-- signin -->
-
-
-
-<section class="k mt-20">
-  <h1 id="tecl" class="mx-6 font-bold tetx-4xl">Brands</h1>
-
-  <!-- images starts -->
-   <div class="mobi">
-   <div class="flex justify-between mx-5 mt-5">
-   <img src="images/apple-logo.png" alt="apple" class="size-16">
-   <img src="images/xiaomi.png" alt="redmi"  class="size-16">
-   <img src="images/one-plus.png" alt="one-plus"  class="size-16">
-   <img src="images/hp.png" alt="hp"  class="size-16">
-   <img src="images/asus.png" alt="asus"  class="size-16">
-   <img src="images/acer.png" alt="acer"  class="size-16">
-  </div>
-</div>
-</section>
-
-
-<section class="flex justify-between mx-5 mt-20">
-  <div class="para1">
-    <p class="font-bold text-3xl">We Provide Best</p>
-    <p class="font-bold text-3xl">Customer Experiences</p>
-  </div>
-  
     <div class="para2">
       <p>|| We ensure that our customer have the best shopping experience</p>
     </div>
-</section>
+  </section>
 
-<div class="class">
-<div class="sm:flex sm:left-0 block justify-between mx-5 relative left-0">
-<section class="w-72 mt-10 ml-5  bg-slate-400 shadow-2xl p-5 rounded-2xl hover:-translate-y-2 hover:duration-1000">
-  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8 mb-3">
-    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-  </svg>
-  
-  <p class="font-bold">Original products</p>
-  <p>We are providing the best Mobiles and laptops, thus there is no cheating in this, also we provide original materials</p>
-</section>
+  <div class="class" style="margin-left: 10px;">
+    <div class="sm:flex sm:left-0 block justify-between mx-5 relative left-0">
+      <section
+        class="w-72 mt-10 ml-5  bg-slate-400 shadow-2xl p-5 rounded-2xl hover:-translate-y-2 hover:duration-1000">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          class="size-8 mb-3">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+        </svg>
 
-<section class="w-72 mt-10 ml-5 bg-slate-400 shadow-2xl p-5 rounded-2xl hover:-translate-y-2 hover:duration-1000">
-  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8 mb-3">
-    <path stroke-linecap="round" stroke-linejoin="round" d="M15.182 15.182a4.5 4.5 0 0 1-6.364 0M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0ZM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Z" />
-  </svg>
-  
-  <p class="font-bold">Customer Satisfaction</p>
-  <p>You customers are very important for us, thus we need your Satisfaction on our products.Rate our Products </p>
-</section>
+        <p class="font-bold">Original products</p>
+        <p>We are providing the best Mobiles and laptops, thus there is no cheating in this, also we provide original
+          materials</p>
+      </section>
 
-<section class="w-72 mt-10 ml-5 bg-slate-400 shadow-2xl p-5 rounded-2xl hover:-translate-y-2 hover:duration-1000">
-  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8 mb-3">
-    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 18.75a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 0 1-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 0 0-3.213-9.193 2.056 2.056 0 0 0-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 0 0-10.026 0 1.106 1.106 0 0 0-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12" />
-  </svg>
-  
-  
-  <p class="font-bold">Fast and Free Delivery</p>
-  <p>Delivery is too fast, either in one five days, but for premium members we assure the same day delivery </p>
-</section>
+      <section class="w-72 mt-10 ml-5 bg-slate-400 shadow-2xl p-5 rounded-2xl hover:-translate-y-2 hover:duration-1000">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          class="size-8 mb-3">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M15.182 15.182a4.5 4.5 0 0 1-6.364 0M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0ZM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Z" />
+        </svg>
 
-<section class="w-72 mt-10 ml-5 bg-slate-400 shadow-2xl p-5 rounded-2xl hover:-translate-y-2 hover:duration-1000">
-  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8 mb-3">
-    <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 21 3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5" />
-  </svg>
-  
-  
-  <p class="font-bold">Affordable Price and easy-returns</p>
-  <p>Delivery is too fast, either in one five days. Product's price are affordable and worthable </p>
-</section>
-</div>
-</div>
+        <p class="font-bold">Customer Satisfaction</p>
+        <p>You customers are very important for us, thus we need your Satisfaction on our products.Rate our Products
+        </p>
+      </section>
+
+      <section class="w-72 mt-10 ml-5 bg-slate-400 shadow-2xl p-5 rounded-2xl hover:-translate-y-2 hover:duration-1000">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          class="size-8 mb-3">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M8.25 18.75a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 0 1-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 0 0-3.213-9.193 2.056 2.056 0 0 0-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 0 0-10.026 0 1.106 1.106 0 0 0-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12" />
+        </svg>
 
 
+        <p class="font-bold">Fast and Free Delivery</p>
+        <p>Delivery is too fast, either in one five days, but for premium members we assure the same day delivery </p>
+      </section>
+
+      <section class="w-72 mt-10 ml-5 bg-slate-400 shadow-2xl p-5 rounded-2xl hover:-translate-y-2 hover:duration-1000">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          class="size-8 mb-3">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M7.5 21 3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5" />
+        </svg>
 
 
-
-<section class="mt-20 mx-5">
-  <p class="font-bold">New Arrivals</p>
-
-  <h1 class="fontbold text-3xl mt-5 ">Mobiles</h1>
-<div class="mobiles">
-  <div class="flex mt-5 justify-between">
-    <div class="image1 shadow-xl w-52">
-      <img src="images/n1.jpg" alt="" class="size-20 ml-5">
-      <p class="p-3">Samsung Galaxy M34 5G (Prism Silver,6GB,128GB)|120Hz sAMOLED Display|50MP Triple No Shake Cam|6000 mAh Battery|4 Gen OS</p>
+        <p class="font-bold">Affordable Price and easy-returns</p>
+        <p>Delivery is too fast, either in one five days. Product's price are affordable and worthable </p>
+      </section>
     </div>
-   
-<div class="image2 w-52 shadow-xl">
-  <img src="images/n1.jpg" alt="" class="size-20 ml-5">
-  <p class="p-3">Redmi 13 5G, Hawaiian Blue, 6GB+128GB | India Debut SD 4 Gen 2 AE | 108MP Pro Grade Camera | 6.79in Largest Display in Segment</p>
-</div>
-  
-<div class="image3 w-52  shadow-xl">
-  <img src="images/n1.jpg" alt="" class="size-20 ml-5">
-  <p class="p-3">OnePlus 11R 5G (Galactic Silver, 8GB RAM, 128GB Storage)</p>
-</div>
-   
-<div class="image4 w-52  shadow-xl">
-  <img src="images/n1.jpg" alt="" class="size-20 ml-5">
-  <p class="p-3">Samsung Galaxy M34 5G (Waterfall Blue,6GB,128GB)|120Hz sAMOLED Display|50MP Triple No Shake Cam|6000 mAh Battery|4 Gen OS Upgrade & 5 Year Security Update|12GB RAM with RAM+|Android</p>
- 
-</div>
   </div>
-</div>
-<div class="laptops">
-  <h1 class="fontbold text-3xl mt-5">Laptops</h1>
-  
-  <div class="flex mt-5 justify-between">
-    <div class="laptop1 shadow-xl w-52">
-      <img src="images/l1.jpg" alt="">
-      <p class="p-3">Acer Aspire Lite 12th Gen Intel Core i7-1255U Premium Metal Laptop (Windows 11 Home/16 GB RAM/512 GB SSD) AL15-52, 39.62cm (15.6")</p>
-    </div>
 
-    <div class="laptop1 w-52 shadow-xl">
-      <img src="images/l2.jpg" alt="">
-      <p class="p-3">Apple MacBook Air Laptop M1 chip, 13.3-inch/33.74 cm Retina Display, 8GB RAM, 256GB SSD Storage, Backlit Keyboard, FaceTime HD</p>
-    </div>
 
-    <div class="laptop1 w-52 shadow-xl">
-      <img src="images/l3.jpg" alt="">
-      <p class="p-3">HP Laptop 15s, 12th Gen Intel Core i5-1235U, 15.6-inch (39.6 cm), FHD, 16GB DDR4, 512GB SSD, Intel Iris Xe graphics, Backlit KB,MSO,Thin </p>
-    </div>
 
-    <div class="laptop1 w-52 shadow-xl">
-      <img src="images/l4.jpg" alt="">
-      <p class="p-3">Dell 14 Thin & Light Laptop, 12th Gen Intel Core i3-1215U Processor/8GB/512GB SSD/Intel UHD Graphics/14.0"(35.56cm)</p>
-    </div>
 
-  </div>
-</div>
+<section id="new">
+  <section class="mt-20 mx-5">
+    <p class="font-bold hidden">New Arrivals</p>
+    <div class="mobiles">
+      <h1 class="fontbold text-3xl mt-5 ">Mobiles</h1>
+
+      <div class="flex mt-5 justify-between">
+        <div class="image1 shadow-xl w-72">
+          <img src="images/n1.jpg" alt="" class="size-20  ml-5">
+          <p class="p-3">Samsung Galaxy M34 5G (Prism Silver,6GB,128GB)|120Hz sAMOLED Display|50MP Triple No Shake
+            Cam|6000 mAh Battery|4 Gen OS</p>
+        </div>
+
+        <div class="image2 shadow-xl w-72">
+          <img src="images/n1.jpg" alt="" class="size-20 ml-5">
+          <p class="p-3">Redmi 13 5G, Hawaiian Blue, 6GB+128GB | India Debut SD 4 Gen 2 AE | 108MP Pro Grade Camera |
+            6.79in Largest Display in Segment</p>
+        </div>
+
+        <div class="image3 w-72 shadow-xl">
+          <img src="images/n1.jpg" alt="" class="size-20 ml-5">
+          <p class="p-3">OnePlus 11R 5G (Galactic Silver, 8GB RAM, 128GB Storage)</p>
+        </div>
+
+        <div class="image4 w-72 shadow-xl">
+          <img src="images/n1.jpg" alt="" class="size-20 ml-5">
+          <p class="p-3">Samsung Galaxy M34 5G (Waterfall Blue,6GB,128GB)|120Hz sAMOLED Display|50MP Triple No Shake
+            Cam|6000 mAh Battery|4 Gen OS Upgrade & 5 Year Security Update|12GB RAM with RAM+|Android</p>
+
+        </div>
+      </div>
+    </div>
+    <div class="laptops">
+      <h1 class="fontbold text-3xl mt-5">Laptops</h1>
+
+      <div class="flex mt-5 justify-between">
+        <div class="laptop1 shadow-xl w-72">
+          <img src="images/l1.jpg" alt="">
+          <p class="p-3">Acer Aspire Lite 12th Gen Intel Core i7-1255U Premium Metal Laptop (Windows 11 Home/16 GB
+            RAM/512 GB SSD) AL15-52, 39.62cm (15.6")</p>
+        </div>
+
+        <div class="laptop1 w-72 shadow-xl">
+          <img src="images/l2.jpg" alt="">
+          <p class="p-3">Apple MacBook Air Laptop M1 chip, 13.3-inch/33.74 cm Retina Display, 8GB RAM, 256GB SSD
+            Storage, Backlit Keyboard, FaceTime HD</p>
+        </div>
+
+        <div class="laptop1 w-72 shadow-xl">
+          <img src="images/l3.jpg" alt="">
+          <p class="p-3">HP Laptop 15s, 12th Gen Intel Core i5-1235U, 15.6-inch (39.6 cm), FHD, 16GB DDR4, 512GB SSD,
+            Intel Iris Xe graphics, Backlit KB,MSO,Thin </p>
+        </div>
+
+        <div class="laptop1 w-72 shadow-xl">
+          <img src="images/l4.jpg" alt="">
+          <p class="p-3">Dell 14 Thin & Light Laptop, 12th Gen Intel Core i3-1215U Processor/8GB/512GB SSD/Intel UHD
+            Graphics/14.0"(35.56cm)</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
 </section>
 
 
-  <h1>Most Wanted</h1>
-<div class="scroll">
-<section class="mainscrolldiv">
-  <div>
-    <button class="icon" onclick="scrolll()"><i class="fas fa-angle-double-left"></i></button>
+  <div id="newa" class="arr">
+    <div class="recommended">
+      <h1 class="recommended__title font-bold text-3xl"> New Arrivals</h1>
+
+      <div class="recommended__container">
+
+        <div class="course-card shadow-xl">
+          <img src="./images/s1.jpg" alt="">
+          <h3 class="p-2">Lenovo IdeaPad Slim 3 13th Gen Intel Core i7-13620H 15" (38.1cm) FHD IPS 300 Nits Thin & Light
+            Laptop (16GB/512GB SSD/Win 11/Office 2021/Alexa built-in/3 month Game Pass/Grey/1.62Kg), </h3>
+
+        </div>
+
+        <div class="course-card shadow-xl">
+          <img src="./images/s2.jpg" alt="">
+          <h3 class="p-2">Acer Aspire 3 Spin 14 2-in-1 Convertible Laptop with Intel Core i3-N305 Processor (Windows 11
+            Home/8 GB/512 GB/AES Pen Solution/MSO) A3SP14-31PT, Multi-Touch WUXGA Display, 1.54 KG,</h3>
+
+        </div>
+
+        <div class="course-card shadow-xl">
+          <img src="./images/s3.jpg" alt="">
+          <h3 class="p-2">ASUS Vivobook S15 OLED 2022, 15.6" 39.62 cm FHD OLED, Intel Core Evo i5-12500H 12th Gen, Thin
+            and Light Laptop (16GB/512GB SSD/Iris Xe Graphics/Windows 11/Office 2021/Black/1.8 kg) </h3>
+
+
+
+        </div>
+
+        <div class="course-card shadow-xl">
+          <img src="./images/s4.jpg" alt="">
+          <h3 class="p-2">Apple 2024 MacBook Air 13″ Laptop with M3 chip: 34.46 cm (13.6″) Liquid Retina Display, 8GB
+            Unified Memory, 256GB SSD Storage, Backlit Keyboard, 1080p FaceTime HD Camera, Touch ID- Space Grey</h3>
+
+        </div>
+
+      </div>
+    </div>
   </div>
-  <div class="cover">
-    <div class="scrollimages">
+
+  <!-- topics -->
+  <div class="topics mt-10">
+    <h1 class="topics-title">Brands Recommended for you</h1>
+    <div class="topics__container">
+      <p><a href="xiaomi.html">xiaomi</a></p>
+      <p><a href="">Apple</a></p>
+      <p><a href="">Samsung</a></p>
+      <p> <a href="">One plus</a></p>
+      <p> <a href="">Acer</a>
+      </p>
+      <p><a href="">Asus </a></p>
+      <p><a href="">HP </a></p>
+      <p> <a href="">Lenovo</a></p>
+      <p> <a href="">Dell</a></p>
+    </div>
+  </div>
+
+    <h1 class="mx-5 font-bold text-4xl mt-20">Most Wanted</h1>
+    <div class="scroll">
+      <section class="mainscrolldiv">
+        <div>
+          <button class="icon" onclick="scrolll()"><i class="fas fa-angle-double-left"></i></button>
+        </div>
+        <div class="cover">
+          <div class="scrollimages">
+
+            <div class="child"><img class="child-img" src="images/l5.webp" alt="">
       
-      <div class="child"><img class="child-img" src="images/l5.webp" alt=""></div>
-      <div class="child"><img class="child-img" src="images/l6.jpg" alt=""></div>
-      <div class="child"><img class="child-img" src="images/l7.webp" alt=""></div>
-      <div class="child"><img class="child-img" src="images/l2.jpg" alt=""></div>
-      <div class="child"><img class="child-img" src="images/l3.jpg" alt=""></div>
-      <div class="child"><img class="child-img" src="images/l4.jpg" alt=""></div>
-      <div class="child"><img class="child-img" src="images/n1.jpg" alt=""></div>
-      <div class="child"><img class="child-img" src="images/n3.jpg" alt=""></div>
-      <div class="child"><img class="child-img" src="images/n4.jpg" alt=""></div>
-      <div class="child"><img class="child-img" src="images/l9.jpg" alt=""></div>
-      <div class="child"><img class="child-img" src="images/l5.webp" alt=""></div>
+            </div>
+            <div class="child"><img class="child-img" src="images/l6.jpg" alt=""></div>
+            <div class="child"><img class="child-img" src="images/l7.webp" alt=""></div>
+            <div class="child"><img class="child-img" src="images/l2.jpg" alt=""></div>
+            <div class="child"><img class="child-img" src="images/l3.jpg" alt=""></div>
+            <div class="child"><img class="child-img" src="images/l4.jpg" alt=""></div>
+            <div class="child"><img class="child-img" src="images/n1.jpg" alt=""></div>
+            <div class="child"><img class="child-img" src="images/n3.jpg" alt=""></div>
+            <div class="child"><img class="child-img" src="images/n4.jpg" alt=""></div>
+            <div class="child"><img class="child-img" src="images/l9.jpg" alt=""></div>
+            <div class="child"><img class="child-img" src="images/l10.jpg" alt=""></div>
+          </div>
+        </div>
+        <div>
+          <button class="icon" onclick="scrollr()"><i class="fas fa-angle-double-right"></i></button>
+        </div>
+      </section>
     </div>
+  </section>
+
+  <div class="news">
+    <section class="flex gap-10 bg-slate-800">
+
+      <img src="images/Intel_Ultra_NG_978x900._SS900_QL85_.jpg" alt="" class="my-5 mx-10 w-1/2">
+
+      <div class="mt-40">
+        <h1 class="font-bold text-xl text-white">Limited </h1>
+        <h1 class="font-bold text-xl text-white">Offer</h1>
+        <div class="mt-5">
+          <p class="text-white">50% OFF on this</p>
+          <p class="text-white">for the first 20</p>
+          <p class="text-white">Customers</p>
+        </div>
+        <div class="flex justify-center items-center">
+
+
+          <button class="p-2 mt-5 bg-white rounded-2xl flex justify-center items-center gap-1">Shop Now
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="size-6">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="m12.75 15 3-3m0 0-3-3m3 3h-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+            </svg>
+
+          </button>
+        </div>
+      </div>
+    </section>
   </div>
-  <div>
-    <button class="icon" onclick="scrollr()"><i class="fas fa-angle-double-right"></i></button>
-  </div>
-</section>
-</div>
+
+  <section class="text-center mt-5">
+    <section class="mt-5 text-center">
+      <h1 class="font-bold text-2xl text-center">Join our News Letter</h1>
+      <p class="text-center">Signup for our email newspaper to get exclusive discounts, updates, and more</p>
+      <input type="text" class="border border-black p-2 m-3" style="width: 80%;"><br>
+      <button class="bg-black text-white p-2 m-1 rounded-2xl">Subscribe</button>
+    </section>
+  </section>
+
+
+  <section class="bg-slate-900 p-10 mt-5">
+    <h1 class="text-4xl text-white font-bold">Nostra</h1>
+    <div class="icons flex mt-3 gap-3">
+      <i class="fa-brands fa-facebook" style="color: #fafafa;"></i>
+      <i class="fa-brands fa-instagram" style="color: #fafafa;"></i>
+      <i class="fa-brands fa-twitter" style="color: #fafafa;"></i>
+    </div>
+    <p class="mt-5 text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, quibusdam?</p>
+    <p class="mt-5 text-white">@ 2024 Nostra.com</p>
+  </section>
 
 
 
 
 
 
-<script src="index.js"></script>
+
+
+  <script src="index.js"></script>
 
 
 
@@ -316,43 +465,5 @@
 
 
 </body>
+
 </html>
-
-    
-   
- 
-    
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

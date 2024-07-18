@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="collections.js"></script>
+</head>
+<body>
+    <section class="vishnu">
+        <div class="flex justify-center items-center gap-10 mt- bg-slate-900 text-white p-5 shadow-xl">
+    
+          <h1 class="text-center  sm:block text-sm">Sign Up and <b>
+              <u>GET 20% 0FF</u></b> for your first Order</h1>
+    
+    
+        </div>
+      </section>
+    
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+        class="size-8 relative left-1/2 mt-3 hover:translate-y-1" id="close">
+        <path stroke-linecap="round" stroke-linejoin="round"
+          d="m9.75 9.75 4.5 4.5m0-4.5-4.5 4.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+      </svg>
+
+      <!-- navbar -->
+
+      <header class="header mx-5 gap-3 flex justify-between">
+        <a href="#" class="logo font-bold tetx-2xl">Nostra</a>
+        <nav class="navbar hidden sm:flex  gap-3" style="margin-left: 800px;">
+          <a href="index.html" class="active">Home</a>
+          <a href="#most" class="active">New Arrivals</a>
+          <a href="collections.html">Collections</a>
+          <a href = "#" id="cart">My cart</a> 
+        </nav>
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 sm:hidden" id="menuicon">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>
+        </div>
+      </header>
+    
+      
+    
+      <section id="sidenav" class="bg-slate-900 fixed z-20 top-0 text-white transition-all duration-1000"
+        style="width: 50%;height: 100vh; right:-50%;">
+    
+       
+        
+        <div class="text-right p-5">
+          <p class="inline cursor-pointer" id="closenav">X</p>
+        </div>
+        <div class="flex flex-col gap-10 cursor-pointer items-center  sm:flex">
+          <p class="hover:underline">Home</p>
+          <p class="hover:underline">New Arrival</p>
+          <p class="hover:underline">Most Wanted</p>
+          <p class="hover:underline">Collections</p>
+          <p class="hover:underline">Contact Us</p>
+         
+        </div>
+      </section>
+
+<!-- creating box1 -->
+<div class="flex justify-between p-3 hidden sm:flex">
+    <div class="border border-red-700 w-fit mx-5 p-3 rounded-2xl">
+        <h1>Brands</h1>
+        <div class="gap-3">
+            <input type="checkbox" name="check" value="Redmi">Redmi
+        <input type="checkbox" name="check" value="Samsung">Samsung
+        <input type="checkbox" name="check" value="Apple">Apple
+        </div>
+       
+    </div>
+    
+    <div class="border border-red-700 w-fit mx-5 p-3 rounded-2xl">
+        <h1>Colors</h1>
+        <div class="gap-3">
+            <input type="checkbox" value="Green">Green
+        <input type="checkbox" value="Silver">Silver
+        <input type="checkbox"  value="Red">Red
+        </div>
+        
+    </div>
+
+    <div class="border border-red-700 w-fit mx-5 p-3 rounded-2xl">
+        <h1>Devices</h1>
+        <div class="gap-3">
+            <input type="checkbox"  value="Mobiles">Mobiles
+        <input type="checkbox"  value="Laptops">Laptops
+      
+        </div>
+        
+    </div>
+</div>
+<hr class="f">
+<div class="text-center">
+<input type="text" placeholder="Search" class="p-3 w-3/4 justify-center items-center border focus:outline-indigo-800 border-red-500" id="search">
+</div>
+
+<div class="recommended">
+    <h1 class=" font-bold text-3xl" id="elec"> Laptops</h1>
+
+    <div class="recommended__container" id="product-container1">
+
+      <div class="course-card shadow-xl">
+        <img src="./images/s1.jpg" alt="">
+        <h3 class="p-2">Lenovo IdeaPad Slim 3 13th Gen Intel Core i7-13620H 15" (38.1cm) Thin & Light
+         </h3>
+          <button class="bg-yellow-600 relative left-1 top-3 sm:10 p-3" > Shop Now</button>
+          <button class="bg-yellow-600 relative left-1 top-3 sm:10 p-3" id="btnn"> Add to Cart</button>
+      </div>
+
+      <div class="course-card shadow-xl">
+        <img src="./images/s2.jpg" alt="">
+        <h3 class="p-2">Acer Aspire 3 Spin 14 2-in-1 Convertible Laptop with Intel Core i3-N305 Processor (Windows 11) Thin 256GB SSD Storage
+         </h3>
+         <button class="bg-yellow-600 relative left-1 top-0 sm:10 p-3"> Shop Now</button>
+         <button class="bg-yellow-600 relative left-1 top-0 sm:10 p-3"> Add to Cart</button>
+      </div>
+
+      <div class="course-card shadow-xl">
+        <img src="./images/s3.jpg" alt="">
+        <h3 class="p-2">ASUS Vivobook S15 OLED 2022, 15.6" 39.62 cm FHD OLED, Intel Core Evo i5-12500H 
+         </h3>
+         <button class="bg-yellow-600 relative left-1 top-0 sm:10 p-3"> Shop Now</button>
+         <button class="bg-yellow-600 relative left-1 top-0 sm:10 p-3"> Add to Cart</button>
+
+
+      </div>
+
+      <div class="course-card shadow-xl">
+        <img src="./images/s4.jpg" alt="">
+        <h3 class="p-2">Apple 2024 MacBook Air 13″ Laptop with M3 chip: 34.46 cm (13.6″) Liquid Retina Display, 8GB </h3>
+    <button class="bg-red-700 mt-5 p-3 ml-24">Not in Stock</button>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="recommended">
+    <h1 class=" font-bold text-3xl" id="ele">Mobiles</h1>
+
+    <div class="recommended__container" id="product-container">
+        
+      <div class="course-card shadow-xl">
+        <img src="./images/p2.jpg" alt="">
+        <h3 class="p-2">OnePlus 11R 5G (Galactic Silver, 8GB RAM, 128GB Storage) </h3>
+        <h3 class="p-2">Sponsered+</h3>
+        <h3 class="p-2"><b>2k+</b> Orders past month</h3>
+        <button class="bg-yellow-600 relative left-1 top-3 sm:10 p-3"> Shop Now</button>
+        <button class="bg-yellow-600 relative left-1 top-3 sm:10 p-3"> Add to Cart</button>
+        </div>
+     
+
+
+      <div class="course-card shadow-xl">
+        <img src="./images/p3.jpg" alt="">
+        <h3 class="p-2">Samsung Galaxy M34 5G (Prism Silver,6GB,128GB)|120Hz sAMOLED Display|50MP Triple No Shake
+            Cam|6000 mAh Battery|4 Gen OS</h3>
+            <h3 class="p-2">Sponsered+</h3>
+            <h3 class="p-2"><b>5k+</b> Orders past month</h3>
+            <button class="bg-yellow-600 relative left-1 top-3 sm:10 p-3"> Shop Now</button>
+            <button class="bg-yellow-600 relative left-1 top-3 sm:10 p-3"> Add to Cart</button>
+      </div>
+
+      <div class="course-card shadow-xl">
+        <img src="./images/p1.jpg" alt="">
+        <h3 class="p-2">Samsung Galaxy M34 5G (Waterfall Blue,6GB,128GB)|120Hz sAMOLED Display|50MP Triple No Shake
+            Cam|6000 mAh Battery| </h3>
+
+            <h3 class="p-2">Sponsered+</h3>
+            <h3 class="p-2"><b>6.3k+</b> Orders past month</h3>
+            <button class="bg-yellow-600 relative left-1 top-3 sm:10 p-3"> Shop Now</button>
+            <button class="bg-yellow-600 relative left-1 top-3 sm:10 p-3"> Add to Cart</button>
+
+      </div>
+
+      <div class="course-card shadow-xl">
+        <img src="./images/p3.jpg" alt="">
+        <h3 class="p-2">Apple | India Debut SD 4 Gen 2 AE | 108MP Pro Grade Camera |
+            6.79in Largest Display in Segment</h3>
+            <h3 class="p-2">Sponsered+</h3>
+<h3 class="p-2"><b>10k+</b> Orders past month</h3>
+<button class="bg-yellow-600 relative left-1 top-3 sm:10 p-3"> Shop Now</button>
+<button class="bg-yellow-600 relative left-1 top-3 sm:10 p-3"> Add to Cart</button>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+
+
+  <section class="text-center mt-5">
+    <section class="mt-5 text-center">
+      <h1 class="font-bold text-2xl text-center">Join our News Letter</h1>
+      <p class="text-center">Signup for our email newspaper to get exclusive discounts, updates, and more</p>
+      <input type="text" class="border border-black p-2 m-3" style="width: 80%;"><br>
+      <button class="bg-black text-white p-2 m-1 rounded-2xl" id="btn">Subscribe</button>
+      
+<div id="info" style="display: none; margin-left: 42%; border: 2px solid red; border-radius: 20px; background-color: black; padding: 10px; color: white; height: 200px; width: 200px;">
+  <p id="clo" class="cursor-pointer">X</p>
+  <p class="mt-5"> Thanks for Subscribing us,you will receive the updates through our news letter</p>
+ 
+</div>
+    </section>
+  </section>
+
+
+  <section class="bg-slate-900 p-10 mt-5">
+    <h1 class="text-4xl text-white font-bold">Nostra</h1>
+    <div class="icons flex mt-3 gap-3">
+      <i class="fa-brands fa-facebook" style="color: #fafafa;"></i>
+      <i class="fa-brands fa-instagram" style="color: #fafafa;"></i>
+      <i class="fa-brands fa-twitter" style="color: #fafafa;"></i>
+    </div>
+    <p class="mt-5 text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, quibusdam?</p>
+    <p class="mt-5 text-white">@ 2024 Nostra.com</p>
+  </section>
+
+
+
+
+
+<script>
+var btn = document.getElementById("btn")
+var inf = document.getElementById("info")
+
+
+btn.addEventListener("click",function(){
+  inf.style.display = "block"
+  btn.textContent = "Subscribed"
+})
+
+var close = document.getElementById("clo")
+
+clo.addEventListener("click",function(){
+     inf.style.display = "none"
+})
+
+var btnn = document.getElementById("btnn")
+btnn.addEventListener("click",function(){
+  btnn.textContent = "Added to cart"
+})
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    var check = document.getElementsByName("check")
+    var result = document.getElementById("result")
+skill = []
+check[0].addEventListener("click",function(){
+    if(check[0].checked){
+        console.log("checked")
+        skill.push(event.target.value)
+        result.textContent = skill
+    } 
+    else{
+        console.log("unchecked")
+    }
+})
+
+
+
+
+
+var productContainer = document.getElementById("product-container")
+var search = document.getElementById("search")
+var productlist = productContainer.querySelectorAll("div")
+
+search.addEventListener("keyup",function(){
+    var enteredValue = event.target.value.toUpperCase()
+
+    for(count = 0; count<productlist.length; count=count+1)
+{
+     var productname = productlist[count].querySelector("h3").textContent
+
+    if(productname.toUpperCase().indexOf(enteredValue)<0)
+{
+    productlist[count].style.display = "none"
+}
+else{
+    productlist[count].style.display = "block"
+}
+}
+})
+
+
+
+var productContainer = document.getElementById("product-container1")
+var search = document.getElementById("search")
+var productlist = productContainer.querySelectorAll("div")
+
+search.addEventListener("keyup",function(){
+    var enteredValue = event.target.value.toUpperCase()
+
+    for(count = 0; count<productlist.length; count=count+1)
+{
+     var productname = productlist[count].querySelector("h3").textContent
+
+    if(productname.toUpperCase().indexOf(enteredValue)<0)
+{
+    productlist[count].style.display = "none"
+}
+else{
+    productlist[count].style.display = "block"
+}
+}
+})
+
+var to = document.querySelector(".vishnu")
+
+var cl = document.getElementById("close")
+
+cl.addEventListener("click",function()
+{
+to.style.display = "none"
+cl.style.display = "none"
+to.style.hover = "translate-y-1"
+})
+
+
+
+
+</script>
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <style>
+    @media screen and (max-width:425px) {
+        body{
+            font-size: 10px;
+        }
+    }
+   </style>
+</body>
+</html>

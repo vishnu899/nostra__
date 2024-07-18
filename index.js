@@ -63,3 +63,44 @@ function scrollr(){
     var right = document.querySelector(".scrollimages");
     right.scrollBy(350,0)
 }
+
+let sections = document.querySelector("#new")
+let navlinks = document.querySelectorAll("header nav a")
+
+window.onscroll = () => {
+    sections.forEach(sec => {
+    let top = window.scrollY;
+    let offset = sec.offsetTop;
+    let height = sec.offsetHeight;
+    let id = sec.getElementById("most")
+
+    if(top >= offset && top < offset + height) {
+          navlinks.forEach(links => {
+            links.classList.remove("active");
+            document.querySelector("header nav a [href*="+id+"]").classList.add("active");
+          }, 1000);
+    };
+
+});
+};
+
+
+let section = document.querySelector("#arr")
+let navlink = document.querySelectorAll("header nav a")
+
+window.onscroll = () => {
+    sections.forEach(sec => {
+    let top = window.scrollY;
+    let offset = sec.offsetTop;
+    let height = sec.offsetHeight;
+    let id = sec.getElementById("new")
+
+    if(top >= offset && top < offset + height) {
+          navlink.forEach(links => {
+            links.classList.remove("active");
+            document.querySelector("header nav a [href*="+id+"]").classList.add("active");
+          }, 1000);
+    };
+
+});
+};
