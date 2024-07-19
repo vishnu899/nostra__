@@ -43,23 +43,20 @@
       d="m9.75 9.75 4.5 4.5m0-4.5-4.5 4.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
   </svg>
 
-  <header class="header mx-5 gap-3 flex justify-between">
-    <a href="#" class="logo font-bold tetx-6xl">Nostra</a>
-    <nav class="navbar hidden sm:flex gap-3" style="margin-left: 700px;">
-      <a href="index.html">Home</a>
-      <a href="#most" class="active">New Arrivals</a>
-      <a href="#new" class="active">Most Wanted</a>
-      <a href="collections.html">Collections</a>
-      <a href="signup.html">Signup</a>
-    </nav>
-    <div>
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 sm:hidden" id="menuicon">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-      </svg>
-    </div>
-  </header>
-
   
+
+  <header class="flex mt-5 justify-between mx-5 ">
+    <h1 class="font-bold text-2xl">Nostra</h1>
+    <div class="flex gap-5 hidden sm:flex">
+      <p>Home</p>
+      <p>Collections</p>
+      <p>Signup</p>
+      <p>My Cart</p>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 sm:hidden" id="menuicon">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+    </svg>
+   </header>
 
   <section id="sidenav" class="bg-slate-900 fixed z-20 top-0 text-white transition-all duration-1000"
     style="width: 50%;height: 100vh; right:-50%;">
@@ -73,7 +70,7 @@
       <p class="hover:underline">Home</p>
       <p class="hover:underline">New Arrival</p>
       <p class="hover:underline">Most Wanted</p>
-      <p class="hover:underline">Collections</p>
+      <p class="hover:underline"><a href="collections.html"></a>Collections</p>
       <p class="hover:underline">Contact Us</p>
     </div>
   </section>
@@ -91,23 +88,23 @@
           <input type="radio" name="radio-btn" id="radio5">
 
           <div class="slide first">
-            <img src="images/p1.jpg" alt="">
+            <img src="images/p1.jpg" alt="" style="width: 350px; height: 500px;">
           </div>
 
           <div class="slide">
-            <img src="images/p2.jpg" alt="">
+            <img src="images/p2.jpg" alt=""  style="width: 350px; height: 500px;">
           </div>
 
           <div class="slide">
-            <img src="images/p3.jpg" alt="">
+            <img src="images/p3.jpg" alt=""  style="width: 350px; height: 500px;">
           </div>
 
           <div class="slide">
-            <img src="images/p4.jpg" alt="">
+            <img src="images/p4.jpg" alt=""  style="width: 350px; height: 500px;">
           </div>
 
           <div class="slide">
-            <img src="images/p5.jpg" alt="">
+            <img src="images/p5.jpg" alt=""  style="width: 350px; height: 500px;">
           </div>
 
           <!--automatic-->
@@ -173,8 +170,8 @@
     </div>
   </section>
 
-  <div class="class" style="margin-left: 10px;">
-    <div class="sm:flex sm:left-0 block justify-between mx-5 relative left-0">
+  <div class="class" style="">
+    <div class="sm:flex sm:left-0 block justify-between mL-5 relative left-0">
       <section
         class="w-72 mt-10 ml-5  bg-slate-400 shadow-2xl p-5 rounded-2xl hover:-translate-y-2 hover:duration-1000">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
@@ -303,22 +300,22 @@
 
         <div class="course-card shadow-xl">
           <img src="./images/s1.jpg" alt="">
-          <h3 class="p-2">Lenovo IdeaPad Slim 3 13th Gen Intel Core i7-13620H 15" (38.1cm) FHD IPS 300 Nits Thin & Light
-            Laptop (16GB/512GB SSD/Win 11/Office 2021/Alexa built-in/3 month Game Pass/Grey/1.62Kg), </h3>
+          <h3 class="p-3">Lenovo IdeaPad Slim 3 13th Gen Intel Core i7-13620H 15" (38.1cm) FHD IPS 300 Nits Thin & Light
+            Laptop (16GB/512GB SSD/Win 11/Office 2021/Alexa built-in/3 ) </h3>
 
         </div>
 
         <div class="course-card shadow-xl">
           <img src="./images/s2.jpg" alt="">
-          <h3 class="p-2">Acer Aspire 3 Spin 14 2-in-1 Convertible Laptop with Intel Core i3-N305 Processor (Windows 11
-            Home/8 GB/512 GB/AES Pen Solution/MSO) A3SP14-31PT, Multi-Touch WUXGA Display, 1.54 KG,</h3>
+          <h3 class="p-3">Acer Aspire 3 Spin 14 2-in-1 Convertible Laptop with Intel Core i3-N305 Processor (Windows 11
+            Home/8 GB/512 GB/AES Pen Solution/MSO) A3SP14-31PT,</h3>
 
         </div>
 
         <div class="course-card shadow-xl">
           <img src="./images/s3.jpg" alt="">
-          <h3 class="p-2">ASUS Vivobook S15 OLED 2022, 15.6" 39.62 cm FHD OLED, Intel Core Evo i5-12500H 12th Gen, Thin
-            and Light Laptop (16GB/512GB SSD/Iris Xe Graphics/Windows 11/Office 2021/Black/1.8 kg) </h3>
+          <h3 class="p-3">ASUS Vivobook S15 OLED 2022, 15.6" 39.62 cm FHD OLED, Intel Core  
+             (16GB/512GB SSD/Iris Xe Graphics/Windows 11/Office 2021/) </h3>
 
 
 
@@ -326,8 +323,8 @@
 
         <div class="course-card shadow-xl">
           <img src="./images/s4.jpg" alt="">
-          <h3 class="p-2">Apple 2024 MacBook Air 13″ Laptop with M3 chip: 34.46 cm (13.6″) Liquid Retina Display, 8GB
-            Unified Memory, 256GB SSD Storage, Backlit Keyboard, 1080p FaceTime HD Camera, Touch ID- Space Grey</h3>
+          <h3 class="p-3">Apple 2024 MacBook Air 13″ Laptop with M3 chip: 34.46 cm (13.6″) Liquid Retina Display, 8GB
+            Unified Memory, 256GB SSD Storage, </h3>
 
         </div>
 

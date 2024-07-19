@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: '#da373d',
+            }
+          }
+        }
+      }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="b1">
+            <p>RAM</p>
+            <input type="checkbox" name="check" value="b2">4GB <br>
+            <input type="checkbox" name="check">6GB <br>
+            <input type="checkbox" name="check">8GB <br>
+        </div>
+    </div>
+
+    <div id="result"></div>
+
+    <div class="b2 hidden" id="i1">
+        <img src="images/k2.webp" alt="">
+    </div>
+
+    <script>
+        var check = document.getElementsByName("check")
+        var i1 = document.getElementById("i1")
+        var result = document.getElementById("result")
+        skill = []
+
+        check[0].addEventListener("click",function(){
+            if(check[0].checked)
+        {
+            console.log("checked")
+            skill.push(event.target.value)
+           
+            i1.style.display = "block"
+        }
+        else{
+            console.log("unchecked")
+            i1.style.display = "none"
+        }
+        })
+    </script>
+</body>
+</html>
